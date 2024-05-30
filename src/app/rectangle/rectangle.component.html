@@ -1,0 +1,20 @@
+<p>rectangle works!</p>
+<div class="parent">
+    <div class="child">
+        <h1>Rectangle</h1>
+
+        <label for="">Length:</label>
+        <input type="number" [(ngModel)]="length">
+        <br>
+
+        <label for="">Breadth:</label>
+        <input type="number" [(ngModel)]="breadth">
+        <br>
+
+        <div class="btns">
+            <button [disabled]="!(length && breadth)" (click)="Area()">Area</button>
+            <button [disabled]="!(length && breadth)" (click)="Perimeter()">Perimeter</button>
+        </div>   
+        <h1>Result is: <mark>{{result}}</mark> </h1>
+    </div>
+</div>

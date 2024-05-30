@@ -1,0 +1,29 @@
+.child{
+    background-color: white;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    /* align-items: center; */
+    text-align: center;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 10px ;
+    margin-top: 20%;
+    margin-left: 30%;
+    
+}
+input{
+    margin-top: 5px;
+}
+.btns{
+    margin-top: 20px;
+    
+    
+}
+button{
+    margin-right: 10px;
+    background-color: chocolate;
+}
+button:hover{
+    box-shadow: 1px 1px 1px 1px grey;
+}

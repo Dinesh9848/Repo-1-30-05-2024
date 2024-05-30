@@ -1,0 +1,31 @@
+.parent{
+    display: flex;
+    height: 700px;
+}
+
+.left{
+    background-color: black;
+    color: white;
+    width: 25%;
+    text-align: center;
+}
+.right{
+    background-color: blue;
+    color: white;
+    width: 80%;
+}
+h3:hover{
+    background-color: red;
+    color: yellow;
+}
+button{
+    background-color: red;
+    color: white;
+    width:200px;
+    border: 0;
+    height: 30px;
+    border-radius: 10px;
+}
+button:hover{
+    box-shadow: 2px 2px 2px 2px rgb(211, 58, 58);
+}
