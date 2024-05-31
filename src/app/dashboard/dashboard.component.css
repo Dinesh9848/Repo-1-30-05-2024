@@ -1,6 +1,12 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 .parent{
     display: flex;
-    height: 700px;
+    /* height: auto; */
+    /* overflow: scroll; */
+    
 }
 
 .left{
@@ -8,11 +14,16 @@
     color: white;
     width: 25%;
     text-align: center;
+    height: 100vh;
+    overflow: auto;
 }
 .right{
     background-color: blue;
     color: white;
     width: 80%;
+    height: 100vh;
+    overflow: auto;
+    
 }
 h3:hover{
     background-color: red;

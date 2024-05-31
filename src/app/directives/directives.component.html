@@ -1,0 +1,121 @@
+<p>directives works!</p>
+
+<h1>For loop in Angular</h1>
+<p *ngFor="let age of ages"> 
+    My age is {{age}}
+</p>
+
+<p *ngFor="let state of states">
+    My state is {{state}}
+</p>
+
+<!-- model-2 - adding i value -->
+
+<h2 *ngFor="let state of states; let i = index">
+    state {{i+1}} name is {{state}}
+</h2>
+
+<!-- Order List -->
+<h1>Order List</h1>
+<!-- orderlist - model-1 -->
+<h4>Model-1</h4>
+<ol>
+    <li *ngFor="let state of states">{{states}}</li>
+</ol>
+
+<!-- orderlist - model-1 -->
+<h4>Model-1</h4>
+<ol type="I">
+    <li *ngFor="let state of states">{{states}}</li>
+</ol>
+
+
+<!-- dropdown -->
+<h1>DropDown</h1>
+<select name="" id="">
+    <option *ngFor="let state of states">{{state}}</option>
+</select>
+
+<h1>Array of Objects</h1>
+<p *ngFor="let product of products">
+    The {{product.name}} price is {{product.price}} and rating is {{product.rating}}.
+</p>
+
+<!-- <h1>Table</h1>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td {{product.name}}></td>
+            <td>{{product.price}}</td>
+            <td>{{product.rating}}</td>
+        </tr>
+    </tbody>
+</table> -->
+
+<h2>Table - 2</h2>
+
+<!-- <table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Exp</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let company of companies">
+            <td>{{company.name}}</td>
+        </tr>
+    </tbody>
+</table> -->
+
+
+<h2>IF Condition</h2>
+
+<h1 *ngIf="true">Hello Directives!!</h1>
+<!-- if it is false it wont appears -->
+
+<h1>Specifying Color</h1>
+
+<!-- <table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Rating</th>b
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td {{product.name}}></td>
+            <td>{{product.price}}</td>
+            <td [ngStyle]="{ 'color': product.rating>3?'green':'red'}">{{product.rating}}</td>
+        </tr>
+    </tbody>
+</table> -->
+
+<h1>Colours apply with conditions</h1>
+
+<!-- <table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td {{product.name}}></td>
+            <td [ngClass]="{'red':product.price<=1000, 'blue':product.price>100&&product.price<=5000, 'green':product.price>5000}">{{product.price}}</td>
+            <td [ngStyle]="{ 'color': product.rating>3?'green':'red'}">{{product.rating}}</td>
+        </tr>
+    </tbody>
+</table> -->
