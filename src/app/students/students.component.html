@@ -1,0 +1,49 @@
+<p>students works!</p>
+<div class="first">
+<h2>Students Registration Form</h2>
+<label for="">Name</label>
+<input type="text" [(ngModel)]="name">
+<br>
+<label for="">Marks</label>
+<input type="number" [(ngModel)]="num1">
+<br>
+<label for="">Fee</label>
+<input type="number" [(ngModel)]="num2">
+<br>
+<button id="submit" (click)="submit()">Submit</button>
+</div>
+
+
+
+
+<h1>All Students Details</h1>
+<br>
+<!-- <div class="filterTheStudents">
+  <button (click)="sortMarksLowToHigh()">Marks Low to High</button>
+  <button (click)="sortMarksHighToLow()">Marks High to Low</button>
+  <button (click)="filterPendingFee()">Pending Fee</button>
+  <button (click)="addSalutation()">Salutation</button>   
+</div> -->
+<br>
+<br>
+<div>
+<table border="1">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Marks</th>
+        <th>Fee</th>
+        <th>Delete</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let student of students; let i = index">
+        <td>{{student.name}}</td>
+        <td>{{student.marks}}</td>
+        <td>{{student.fee}}</td>
+        <td><button (click)="deleteStudent(i)">Delete</button></td>
+    </tr>
+</tbody>
+</table>
+</div>
+

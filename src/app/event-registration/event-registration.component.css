@@ -1,0 +1,25 @@
+.parent{
+    width: 400px;
+    height: auto;
+    background-color: orange;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 20%;
+
+
+}
+input{
+    border: 0;
+}
+button{
+    border: 1;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.buttons{
+    margin-right: 10px;
+    display: flex;
+    border-radius: 10px;
+}

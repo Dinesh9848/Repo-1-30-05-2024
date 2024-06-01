@@ -11,6 +11,11 @@ import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
 import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { EventRegistrationComponent } from './event-registration/event-registration.component';
+import { StudentsComponent } from './students/students.component';
+import { CarCompanyComponent } from './car-company/car-company.component';
+import { PracticeComponent } from './practice/practice.component';
+import { DiceComponent } from './dice/dice.component';
 
 const routes: Routes = [
   {path:'login', component: LoginComponent},
@@ -22,7 +27,12 @@ const routes: Routes = [
     {path:'rectangle', component:RectangleComponent},
     {path:'circle', component:CircleComponent},
     {path:'bmi-calculator', component:BmiCalculatorComponent},
-    {path:'directives', component:DirectivesComponent}
+    {path:'directives', component:DirectivesComponent},
+    {path:'eventregistration', component:EventRegistrationComponent},
+    {path:'students', component:StudentsComponent},
+    {path:'carcompany', component:CarCompanyComponent},
+    {path:'practice', component:PracticeComponent},
+    {path:'dice', component:DiceComponent}
   ]},
   {path:'', component: LoginComponent},
   {path:'**', component:PagenotfoundComponent}

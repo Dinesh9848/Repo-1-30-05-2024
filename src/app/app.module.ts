@@ -15,6 +15,11 @@ import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
 import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { EventRegistrationComponent } from './event-registration/event-registration.component';
+import { StudentsComponent } from './students/students.component';
+import { CarCompanyComponent } from './car-company/car-company.component';
+import { PracticeComponent } from './practice/practice.component';
+import { DiceComponent } from './dice/dice.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +34,12 @@ import { DirectivesComponent } from './directives/directives.component';
     RectangleComponent,
     CircleComponent,
     BmiCalculatorComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    EventRegistrationComponent,
+    StudentsComponent,
+    CarCompanyComponent,
+    PracticeComponent,
+    DiceComponent
   ],
   imports: [
     BrowserModule,

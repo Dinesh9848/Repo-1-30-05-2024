@@ -1,0 +1,19 @@
+<div>
+    <label for="cars">Choose a car:</label>
+<select [(ngModel)]="companies">
+  <option value="" disabled selected>Select your favorite car</option>
+  <option value="maruti">Maruti Suzuki</option>
+  <option value="hyundai">Hyundai</option>
+  <option value="tata">Tata</option>
+  <option value="toyota">Toyota</option>
+</select>
+
+<div *ngIf="!companies">
+  <h1>Select Your Favorite Car</h1>
+</div>
+
+<img *ngIf="companies=='maruti'" src="https://cdni.autocarindia.com/utils/imageresizer.ashx?n=http://img.haymarketsac.in/autocarpro/81d874d7-1078-414c-8007-00d8dc8cfb3f.jpg&w=750&h=490&q=75&c=1" alt="" width="100%" height="500px">
+<img *ngIf="companies=='hyundai'" src="https://c4.wallpaperflare.com/wallpaper/107/815/652/hyundai-car-hyundai-creta-orange-car-wallpaper-preview.jpg" alt="" width="100%" height="500px">
+<img *ngIf="companies=='tata'" src="/assets/images/cars/Tata_1.jpg" alt="" width="100%" height="500px">
+<img *ngIf="companies=='toyota'" src="https://www.drivespark.com/wallimg/360x80/photos/2019-toyota-tundra/2019-toyota-tundra-01.jpg" alt="" width="100%" height="500px">
+</div>
